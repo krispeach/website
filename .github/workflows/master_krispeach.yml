@@ -31,6 +31,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'krispeach'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4EADE515B083440CA286B8E6214921F6 }}
-          package: .
+          package: ./dist/website
