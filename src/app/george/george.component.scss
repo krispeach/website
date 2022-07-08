@@ -1,0 +1,127 @@
+.leftside {
+  flex: 50%;
+  margin-top: 20%;
+}
+
+.rightside {
+  flex: 50%;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.grid, .popup {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+.grid {
+  border: 2px solid blue;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.snake.tail {
+  background-image: url("../../assets/images/tail.png");
+}
+
+.snake.head {
+  background-image: url("../../assets/images/head.png");
+}
+
+.snake {
+  background-image: url("../../assets/images/body.png");
+}
+
+.apple {
+  background: red;
+  border-radius: 20px;
+}
+
+.popup {
+  border: 2px solid blue;
+  background: rgb(32, 31, 31);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+.popup #message {
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  left: 50%;
+  top: 100%;
+  margin-left: -60px;
+  margin-top: 5px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip .tooltiptexttop {
+  visibility: hidden;
+  width: 120px;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -60px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptexttop {
+  visibility: visible;
+}
+
+.tooltip .tooltiptexttop::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
