@@ -1,6 +1,10 @@
-h1 {
-  color: white;
-  text-align: center;
+
+
+.headshot {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0% 100%;
 }
 
 .row {
@@ -12,13 +16,6 @@ h1 {
   content: "";
   display: table;
   clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .row,
-  .navbar {
-    flex-direction: column;
-  }
 }
 
 .leftcolumn {

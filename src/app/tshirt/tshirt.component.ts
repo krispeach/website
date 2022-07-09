@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-tshirt',
   templateUrl: './tshirt.component.html',
   styleUrls: ['./tshirt.component.scss']
 })
-export class TshirtComponent implements OnInit {
+export class TshirtComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  @HostListener('window:load', ['$event'])
+  onWindowLoad() {
 
+  }
 }

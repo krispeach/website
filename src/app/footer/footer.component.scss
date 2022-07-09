@@ -3,10 +3,15 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 1em;
+  height: 5em;
+  z-index: -1;
+  display: none;
+  visibility: hidden;
   background-color: mediumpurple;
   color: white;
   text-align: center;
-  margin-top: 1em;
-  height: 5em;
   vertical-align: middle;
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
 }

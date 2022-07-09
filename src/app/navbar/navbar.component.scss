@@ -1,10 +1,14 @@
 .navbar {
   position: fixed;
-  top: 15%;
+  top: 10%;
   left: 0;
   right: 0;
-  display: flex;
+  z-index: -1;
+  display: none;
+  visibility: hidden;
   background-color: rebeccapurple;
+  transition-delay: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .navbar a {
